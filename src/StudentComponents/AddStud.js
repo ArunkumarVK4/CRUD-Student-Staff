@@ -14,7 +14,7 @@ import AppPro from "../UseContext/AppProvider";
      setGender(""),
      setSub1(""),
      setSub2(""),
-     setSub3(""),
+     setSub3("")
   }
 
   // ADD STUDENT FUNCTION
