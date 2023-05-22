@@ -8,6 +8,14 @@ import AppPro from "../UseContext/AppProvider";
   const { students, setStudents, name, setName, gender, setGender, sub1, setSub1, sub2, setSub2, sub3, setSub3, } = AppPro();
   
   const history = useHistory();
+  
+  function addStudents(){
+    setName(""),
+     setGender(""),
+     setSub1(""),
+     setSub2(""),
+     setSub3(""),
+  }
 
   // ADD STUDENT FUNCTION
   function addStudent() {
@@ -41,7 +49,7 @@ import AppPro from "../UseContext/AppProvider";
     <Base>
 
     
-    <button type="button" className="btn btn-primary m-5" onClick={addStudent}>ADD STUDENTS</button>
+    <button type="button" className="btn btn-primary m-5" onClick={addStudents}>ADD STUDENTS</button>
       <div>
         <div style={{display:"flex",flexDirection:"column", width:"60%",margin:"0 auto"}}> 
           
