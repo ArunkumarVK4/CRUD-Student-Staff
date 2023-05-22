@@ -26,6 +26,15 @@ function EditStudent() {
 
   const { id } = useParams();
   const edit = students[id];
+  
+  function addStudents(){
+      setName("")
+      setGender("")
+      setSub1("")
+      setSub2("")
+      setSub3("")
+      history.push("/addStudent")
+    }
 
   // USE EFFECT
   useEffect(() => {
@@ -59,7 +68,7 @@ function EditStudent() {
 
           <Button variant="contained"
           style={{marginLeft:"50px"}}
-          onClick={() => history.push("/addStudent")}>
+          onClick={addStudents}>
             ADD STUDENT
           </Button>
         </div>
