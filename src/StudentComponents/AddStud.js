@@ -10,10 +10,10 @@ import AppPro from "../UseContext/AppProvider";
   const history = useHistory();
   
   function addStudents(){
-    setName(""),
-     setGender(""),
-     setSub1(""),
-     setSub2(""),
+    setName("")
+     setGender("")
+     setSub1("")
+     setSub2("")
      setSub3("")
   }
 
